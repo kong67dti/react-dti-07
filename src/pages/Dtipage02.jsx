@@ -12,7 +12,7 @@ export default function Dtipage01() {
     if (title && fullname && faculty) {
       setShowRealTimeWelcome(`สวัสดี ${title} ${fullname} จากคณะ ${faculty}`);
     } else {
-      setShowRealTimeWelcome("");
+      setShowRealTimeWelcome("")
     }
   }, [title, fullname, faculty]);
 
@@ -26,7 +26,7 @@ export default function Dtipage01() {
 
   return (
     <div>
-      <Dtiheader title="DTI PAGE B" detail="Hello... ^ ^" />
+      <Dtiheader title="DTI PAGE B" detail="Hey... ^ ^" />
       <div className="mt-10 text-center font-bold text-blue-600 text-2xl">
         Welcome Form V.1.0
       </div>
@@ -87,7 +87,7 @@ export default function Dtipage01() {
         </button>
 
         <h1 className="mt-5 text-3xl">{showRealTimeWelcome}</h1>
-        {showwelcome && <h2 className="mt-5 text-xl">{showwelcome}</h2>}
+       
       </div>
     </div>
   );
